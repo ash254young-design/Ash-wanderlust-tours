@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley's Travel - Explore the World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Ashley's Travel ✈️</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+    
+            <h1>Discover Your Next Adventure</h1>
+            <p>Experience the beauty of the world with our curated travel packages.</p>
+            <button onclick="scrollToDestinations()">View Destinations</button>
+        </section>
+
+        <section id="destinations" class="content-section">
+            <h2>Popular Destinations</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="zebra.jpg" alt="Zebra in the Kenyan Savannah" class="card-image">
+                    <h3>Safari in Kenya</h3>
+                    <p>Witness the great migration and beautiful savannahs.</p>
+                </div>
+                <div class="card">
+                    <img src="sand dunes.jpg" alt="Mamburi Sand Dunes" class="card-image">
+                    <h3>Mamburi Sand Dunes</h3>
+                    <p>Relax on pristine white sands and crystal clear waters.</p>
+                </div>
+                <div class="card">
+                    <img src="nairobi.jpg" alt="Nairobi lights" class="card-image">
+                    <h3>Lights of Nairobi</h3>
+                    <p>Enjoy the romance and culture of Kenya.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="content-section">
+            <h2>Travel Safety Tips</h2>
+            <p>Click the button below to reveal or hide our top safety tips for travelers.</p>
+            
+            <button id="toggle-btn" onclick="toggleTips()">Show Tips</button>
+            
+            <div id="tips-content" style="display: none;">
+                <ul>
+                    <li>✅ Always keep a digital copy of your passport.</li>
+                    <li>✅ Research local emergency numbers.</li>
+                    <li>✅ Avoid carrying large amounts of cash.</li>
+                    <li>✅ Drink bottled water in remote areas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="validateForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Your Email">
+                
+                <button type="submit">Subscribe to Newsletter</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ashley's Travel Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
